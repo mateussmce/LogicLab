@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Número Secreto | LogicLab</title>
+    <link rel="shortcut icon" href="../../assets/logo-numero-secreto.png" type="image/x-icon">
+    <link rel="stylesheet" href="../base-project/css/style.css">
+</head>
+<body>
+    <main class="content model__horizontal model__center">
+        <section class="content__section model__vertical model__center">
+            <h1 class="content__title">Número Secreto</h1>
+            <label for="guess" class="content__text">Digite um número entre x e y</label>
+
+            <div class="model__vertical model__center">
+                <input type="number" id="guess" name="guess" placeholder="Digite seu chute" class="content__text-box"/>
+            </div>
+
+            <div class="model__horizontal model__center model__break">
+                <button onclick="guessSecretNumber()" id="guess-button" class="content__button add-background">
+                    Chutar
+                </button>
+
+                <button onclick="restartGame()" id="restart-button" class="content__button restart-background" disabled>
+                    Reiniciar
+                </button>
+            </div>
+
+            <div class="model__vertical model__center" id="element-message-alert"></div>
+        </section>
+
+        <section class="content__section model__vertical model__center">
+            <h2 class="content__subtitle">Números sorteáveis</h2>
+
+            <div class="model__horizontal model__center model__break" id="element-drawn-numbers"></div>
+        </section>
+    </main>
+
+    <script src="js/script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+.game {
+    border: 0.3rem solid var(--color-font);
+    border-radius: 0.5rem;
+    padding: 1rem 2rem;
+}
+
+.content__subtitle {
+    font-size: 1.8rem;
+}
+
+.game .content__button {
+    width: 100%;
+}
+
+.restart-background {
+    border: 0.2rem solid var(--color-font);
+}

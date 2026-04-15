@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteador de Números | LogicLab</title>
+    <link rel="shortcut icon" href="../../assets/logo-sorteador-numeros.png" type="image/x-icon">
+    <link rel="stylesheet" href="../base-project/css/style.css">
+</head>
+<body>
+    <main class="content model__horizontal model__center">
+        <section class="content__section model__vertical model__center">
+            <h1 class="content__title">Sorteador de Números</h1>
+
+            <div class="model__vertical model__center">
+                <select id="chosen-option" name="chosen-option" class="content__text-box">
+                    <option value="1">Normal</option>
+                    <option value="2">Pares</option>
+                    <option value="3">Ímpares</option>
+                </select>
+
+                <input type="number" name="min-number" id="min-number" placeholder="Digite o número mínimo" class="content__text-box"/>
+                <input type="number" name="min-number" id="max-number" placeholder="Digite o número máximo" class="content__text-box"/>
+                <input type="number" name="min-number" id="quantity" placeholder="Digite a quantidade" class="content__text-box"/>
+            </div>
+
+            <div class="model__horizontal model__center model__break">
+                <button onclick="drawNumbers()" id="drawn-button" class="content__button add-background">
+                    Sortear
+                </button>
+
+                <button onclick="restartGame()" id="restart-button" class="content__button restart-background" disabled>
+                    Reiniciar
+                </button>
+            </div>
+
+            <div class="model__vertical model__center" id="element-message-alert"></div>
+        </section>
+
+        <section class="content__section model__vertical model__center">
+            <h2 class="content__subtitle">Números pendentes</h2>
+
+            <div class="model__horizontal model__center model__break" id="element-draw-numbers"></div>
+        </section>
+    </main>
+
+    <script src="js/script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+.content__box {
+    font-size: 1.5rem;
+}
+
+.content__products {
+    border-bottom: 0.3rem solid var(--color-font);
+    padding-bottom: 3rem;
+    width: 100%;
+}
+
+.content__product {
+    border: 0.3rem solid var(--color-font);
+    border-radius: 0.5rem;
+    padding: 1rem 2rem;
+}
+
+.content__product .content__subtitle {
+    font-size: 1.8rem;
+}
+
+.content__product .content__tag {
+    font-size: 1rem;
+}
+
+.content__message {
+    width: 70%;
+}

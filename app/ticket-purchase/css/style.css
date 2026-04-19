@@ -1,0 +1,12 @@
+.content__options-menu div:nth-child(2) {
+    border-top: 0.3rem solid var(--color-font);
+    padding-top: 1.5rem;
+}
+
+#ticket-purchase-element .content__text {
+    line-height: 50px;
+    letter-spacing: 1px;
+    border: 0.2rem solid var(--color-font);
+    border-radius: 1rem;
+    padding: 1rem;
+}

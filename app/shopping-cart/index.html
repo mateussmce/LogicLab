@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras | LogicLab</title>
+    <link rel="shortcut icon" href="../../assets/logo-carrinho-compras.png" type="image/x-icon">
+    <link rel="stylesheet" href="../base-project/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main class="content model__horizontal model__center">
+        <section class="content__section model__vertical model__center">
+            <h1 class="content__title">Carrinho de Compras</h1>
+
+            <div class="model__vertical model__center">
+                <input type="number" id="amount" name="amount" placeholder="Digite a quantidade" class="content__text-box"/>
+                
+                <select id="chosen-option-product" name="chosen-option-product" class="content__text-box"></select>
+            </div>
+
+            <div class="model__horizontal model__center">
+                <button onclick="addProductToCart()" id="button-product-to-cart" class="content__button add-background">Adicionar</button>
+            </div>
+
+            <div class="model__vertical model__center" id="alert-message-element"></div>
+        </section>
+        <section class="content__section model__vertical model__center">
+            <h2 class="content__subtitle">
+                Total: R$ 
+                <span class="content__emphasis" id="total-price-element">0</span>
+            </h2>
+
+            <div class="content__products model__horizontal model__center model__break" id="products-element"></div>
+
+            <div class="model__horizontal model__center model__break" id="cart-added-products-element"></div>
+        </section>
+    </main>
+
+    <script src="js/script.js" defer></script>
+</body>
+</html>

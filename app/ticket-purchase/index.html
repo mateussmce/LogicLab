@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra de Ingressos | LogicLab</title>
+    <link rel="shortcut icon" href="../../assets/logo-compra-ingressos-removebg-preview.png" type="image/x-icon">
+    <link rel="stylesheet" href="../base-project/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main class="content model__horizontal model__center">
+        <section class="content__section model__vertical model__center">
+            <div class="model__vertical model__center" id="alert-message-element"></div>
+
+            <h1 class="content__title">Compra de Ingressos</h1>
+
+            <div class="model__vertical model__center">
+                <input type="text" id="name-user" name="name-user" placeholder="Digite seu nome" class="content__text-box"/>
+            </div>
+
+            <div class="model__horizontal model__center model__break">
+                <button onclick="activeTicketPurchase()" id="button-ticket-purchase" class="content__button add-background">
+                    Comprar
+                </button>
+            </div>
+
+            <div class="content__options-menu model__vertical model__center">
+                <div class="model__vertical model__center" id="seat-selection-element">
+                    <p class="content__text content__emphasis">Nenhum assento escolhido.</p>
+                </div>
+
+                <div class="model__vertical model__center" id="ticket-purchase-element">
+                    <p class="content__text">Nenhum ingresso comprado</p>
+                </div>
+            </div>
+
+        </section>
+        <section class="content__section model__vertical model__center">
+            <h2 class="content__subtitle">Reserve já</h2>
+            <p class="content__text">
+                Preço da compra:
+                R$ <span class="content__emphasis" id="purchase-cost">0</span>
+            </p>
+
+            <div class="model__horizontal model__center model__break" id="reserved-seats-element"></div>
+
+            <p class="content__text">
+                Preço do ingresso: R$ <span class="content__emphasis" id="ticket-price-element">0</span>
+            </p>
+        </section>
+    </main>
+
+    <script src="js/script.js" defer></script>
+</body>
+</html>

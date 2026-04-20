@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+@import url('model.css');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background-color: #222831;
+    --color-font: #FFFFFF;
+
+    --add-background: #3852B4;
+    --restart-background: #2E2E2E;
+    --random-background: #ff4500;
+    --danger-background: #CE2626;
+    --success-background: #346739;
+
+    --primary-font: 'JetBrains Mono', sans-serif;
+}
+
+body {
+    background: var(--background-color);
+    color: var(--color-font);
+    font-family: var(--primary-font);
+}
+
+a {
+    text-decoration: none;
+}
+
+.content {
+    padding: 2rem;
+}
+
+.content__section {
+    flex: 1 1 50%;
+    gap: 2.5rem;
+}
+
+.content__title {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.content__subtitle {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.content__text {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.content__emphasis {
+    color: var(--add-background);
+    font-weight: bold;
+}
+
+.content__text-box {
+    background: var(--background-color);
+    color: var(--color-font);
+    border: 0.2rem solid var(--color-font);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    outline: none;
+    width: 100%;
+}
+
+.content__button {
+    border: none;
+    border-radius: 0.5rem;
+    color: var(--color-font);
+    padding: 0.7rem 2.3rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.content__button:disabled {
+    border: 0.1rem solid var(--color-font);
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.content__message {
+    padding: 0.7rem 1.5rem;
+    border-radius: 0.5rem;
+    word-break: break-word;
+}
+
+.content__message-alert {
+    animation-name: AnimateSides;
+    animation-duration: 1s;
+}
+
+.content__tag {
+    padding: 0.3rem;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.content__box {
+    border: 0.2rem solid var(--color-font);
+    border-radius: 0.5rem;
+    font-size: 2.4rem;
+    padding: 0.5rem 1rem;
+}
+
+.content__image {
+    border: 0.3rem solid var(--add-background);
+    border-radius: 0.5rem;
+    width: 100%;
+}
+
+.content__opacity {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+@keyframes AnimateSides {
+    to {
+        width: 350px;
+    }
+
+    from {
+        width: 700px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .content__section:nth-child(1) {
+        border-bottom: 0.4rem solid var(--color-font);
+        padding: 2rem 0;
+    }
+
+    .content__section {
+        width: 100%;
+    }
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amigo Secreto | LogicLab</title>
+    <link rel="shortcut icon" href="../../assets/logo-amigo-secreto-removebg-preview.png" type="image/x-icon">
+    <link rel="stylesheet" href="../base-project/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main class="content model__horizontal model__center">
+        <section class="content__section model__vertical model__center">
+            <h1 class="content__title">Amigo Secreto</h1>
+
+            <div class="model__vertical model__center">
+                <input type="text" id="nickname" name="nickname" placeholder="Nome do amigo" class="content__text-box"/>
+            </div>
+
+            <div class="model__horizontal model__center model__break">
+                <button onclick="enableAddSecretFriend()" id="button-add-secret-friend" class="content__button add-background">
+                    Adicionar
+                </button>
+                <button onclick="drawSecretFriend()" id="button-draw-secret-friend" class="content__button random-background" disabled>
+                    Sortear
+                </button>
+                <button onclick="restart()" id="button-restart" class="content__button restart-background" disabled>
+                    Reiniciar
+                </button>
+            </div>
+
+            <div class="model__vertical model__center" id="alert-message-element"></div>
+
+        </section>
+        <section class="content__section model__vertical model__center">
+            <div class="content__operations model__vertical model__center">
+                <div class="content__operation model__vertical model__center">
+                    <h2 class="content__subtitle">Amigos adicionados</h2>
+
+                    <div class="content__message-friend model__vertical" id="friend-added-element"></div>
+                </div>
+                <div class="content__operation model__vertical model__center">
+                    <h2 class="content__subtitle">Amigos sorteados</h2>
+
+                    <div class="content__message-friend model__vertical" id="drawn-friend-element"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/script.js" defer></script>
+</body>
+</html>

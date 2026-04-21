@@ -1,0 +1,15 @@
+.content__message-friend {
+    width: 100%;
+}
+
+.content__operation {
+    border: 0.2rem solid var(--color-font);
+    border-radius: 0.5rem;
+    padding: 1.5rem 1rem;
+}
+
+@media screen and (max-width: 585px) {
+    .content__message-friend {
+        width: 100%;
+    }
+}

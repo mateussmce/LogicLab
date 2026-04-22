@@ -30,6 +30,7 @@ function rentGame(selectedGame) {
         gameTagClass.add('danger-background');
         gameTag.textContent = 'Indisponível';
 
+        gameButton.textContent = 'Devolver';
         gameButtonClass.remove('add-background');
         gameButtonClass.add('restart-background');
 
@@ -43,6 +44,7 @@ function rentGame(selectedGame) {
         gameTagClass.add('success-background');
         gameTag.textContent = 'Disponível';
 
+        gameButton.textContent = 'Alugar';
         gameButtonClass.remove('restart-background');
         gameButtonClass.add('add-background');
 
